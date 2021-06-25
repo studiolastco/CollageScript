@@ -7,7 +7,7 @@ let CanvasGrid =  require('./lib/Canvas/CanvasGrid.js');
 /*var renderer = new RendererPhotoshop();
 renderer.setConfig(new RendererPhotoshopConfig());
 renderer.init();*/
-console.log('boo');
+console.log('boobashbarboooo');
 /* Choose a canvas type then set some properties */
 let canvas = new CanvasGrid();
 /*canvas.setRenderer(renderer);
