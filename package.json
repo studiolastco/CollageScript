@@ -18,5 +18,8 @@
   "bugs": {
     "url": "https://github.com/studiolastco/CollageScript/issues"
   },
-  "homepage": "https://github.com/studiolastco/CollageScript#readme"
+  "homepage": "https://github.com/studiolastco/CollageScript#readme",
+  "devDependencies": {
+    "jest": "^27.0.5"
+  }
 }
