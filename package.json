@@ -1,0 +1,22 @@
+{
+  "name": "collagescript-1.0",
+  "version": "1.0.0",
+  "description": "CollagScript 1.0, rewrite",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/studiolastco/CollageScript.git"
+  },
+  "author": "Calhoun Smith <cal@calhounsmith.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/studiolastco/CollageScript/issues"
+  },
+  "homepage": "https://github.com/studiolastco/CollageScript#readme"
+}

@@ -1,0 +1,1 @@
+﻿#include "/Users/calhoun/Work/CollageScript/lib/Include.jsx";app.preferences.rulerUnits = Units.CM;var myDocument = app.activeDocument;var canvas = new CanvasGrid();try{  CSGlobal.csDebug(1,"Setting canvas...");  canvas.setCanvas(myDocument);  alert('boo');}catch (e){  CSGlobal.csDebug(1,e.message);}

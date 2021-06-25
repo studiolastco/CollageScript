@@ -1,0 +1,1 @@
+﻿    #target photoshop;      app.bringToFront();            if(documents.length){      var lays = activeDocument.artLayers.length;      };    $.writeln(lays);
