@@ -1,6 +1,5 @@
-﻿module.exports =
-{
-  Canvas      : require('./lib/Canvas.js'),
-  CanvasGrid  : require('./lib/Canvas/CanvasGrid.js'),
-  Geometry  : require('./lib/Geometry.js'),
-};
+﻿const Canvas  = require('./lib/Canvas.js');
+const CanvasGrid  = require('./lib/Canvas/CanvasGrid.js');
+
+c = new Canvas;
+cg = new CanvasGrid;
