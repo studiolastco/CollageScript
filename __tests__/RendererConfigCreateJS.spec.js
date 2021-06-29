@@ -1,20 +1,20 @@
 const RendererConfig = require("../lib/Renderer/Config.js");
-const RendererConfigPhotoshop = require("../lib/Renderer/Config/Photoshop.js");
+const RendererConfigCreateJS = require("../lib/Renderer/Config/CreateJS.js");
 
-describe("RendererConfigPhotoshop object unit tests.", () => {
+describe("RendererConfigCreateJS object unit tests.", () => {
 
-    test("RendererConfigPhotoshop should extend RendererConfig object", () => {
-        let r = new RendererConfigPhotoshop;
+    test("RendererConfigCreateJS should extend RendererConfig object", () => {
+        let r = new RendererConfigCreateJS;
         expect(r).toBeInstanceOf(RendererConfig);
     });
 
-    test("RendererConfigPhotoshop constructor should return RendererConfigPhotoshop object", () => {
-        let r = new RendererConfigPhotoshop;
-        expect(r).toBeInstanceOf(RendererConfigPhotoshop);
+    test("RendererConfigCreateJS constructor should return RendererConfigCreateJS object", () => {
+        let r = new RendererConfigCreateJS;
+        expect(r).toBeInstanceOf(RendererConfigCreateJS);
     });
 
     test("gridX property testing...", () => {
-        let r = new RendererConfigPhotoshop();
+        let r = new RendererConfigCreateJS();
         expect(r).toHaveProperty('DEFAULT_GRIDX');
         expect(r.DEFAULT_GRIDX).not.toBeUndefined();
         expect(r).toHaveProperty('gridX');
@@ -25,7 +25,7 @@ describe("RendererConfigPhotoshop object unit tests.", () => {
     })
 
     test("gridY property testing...", () => {
-        let r = new RendererConfigPhotoshop();
+        let r = new RendererConfigCreateJS();
         expect(r).toHaveProperty('DEFAULT_GRIDY');
         expect(r.DEFAULT_GRIDY).not.toBeUndefined();
         expect(r).toHaveProperty('gridY');

@@ -1,4 +1,6 @@
-const Canvas = require("../lib/Canvas.js");
+const CanvasGrid = require("../lib/Canvas/Grid.js");
+const Renderer = require("../lib/Renderer.js");
+const RendererPhotoshop = require("../lib/Renderer/Photoshop.js");
 
 describe("Canvas object unit tests.", () => {
 
@@ -8,10 +10,15 @@ describe("Canvas object unit tests.", () => {
         }).toThrow();
     });
 
-    test("Set Renderer...", () => {
-        expect (() => {
-            let c = new Canvas;
+    test("Set Renderer (object composition)...", () => {
+        let c = new CanvasGrid;
+        let r = new RendererPhotoshop;
+        expect(c.setRenderer(r)).toBeInstanceOf(Renderer);
+
+        expect(() => {
+            c.setRenderer(c);
         }).toThrow();
+
     });
 
 });
