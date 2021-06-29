@@ -1,9 +1,9 @@
-const CanvasGrid = require("../lib/Canvas/CanvasGrid.js");
+const Grid = require("../lib/Canvas/Grid.js");
 
-describe("CanvasGrid object unit tests.", () => {
+describe("Grid object unit tests.", () => {
 
-    test("CanvasGrid constructor should return CanvasGrid object", () => {
-        let c = new CanvasGrid;
-        expect(c).toBeInstanceOf(CanvasGrid);
+    test("Grid constructor should return Grid object", () => {
+        let c = new Grid;
+        expect(c).toBeInstanceOf(Grid);
     });
 });

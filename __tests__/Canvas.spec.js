@@ -2,8 +2,16 @@ const Canvas = require("../lib/Canvas.js");
 
 describe("Canvas object unit tests.", () => {
 
-    test("Canvas constructor should return Canvas object", () => {
-        let c = new Canvas;
-        expect(c).toBeInstanceOf(Canvas);
+    test("Direct instantiation returns error. Canvas is abstract.", () => {
+        expect (() => {
+            let c = new Canvas;
+        }).toThrow();
     });
+
+    test("Set Renderer...", () => {
+        expect (() => {
+            let c = new Canvas;
+        }).toThrow();
+    });
+
 });
