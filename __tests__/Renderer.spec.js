@@ -1,4 +1,7 @@
-const Canvas = require("../lib/Renderer.js");
+const Renderer = require("../lib/Renderer.js");
+const RendererConfig = require("../lib/Renderer/Config.js");
+const RendererPhotoshop = require("../lib/Renderer/Photoshop.js");
+const RendererConfigPhotoshop = require("../lib/Renderer/Config/Photoshop.js");
 
 describe("Renderer object unit tests.", () => {
 
@@ -7,4 +10,16 @@ describe("Renderer object unit tests.", () => {
             let r = new Renderer;
         }).toThrow();
     });
+
+    test("Set Config (object composition)...", () => {
+        let r = new RendererPhotoshop;
+        let c = new RendererConfigPhotoshop;
+        expect(r.setConfig(c)).toBeInstanceOf(RendererConfig);
+
+        expect(() => {
+            r.setConfig(r);
+        }).toThrow();
+
+    });
+
 });
