@@ -1,6 +1,3 @@
-lib-legacy
-lib-legacy/*
-
 # MacOS
 .DS_Store
 
