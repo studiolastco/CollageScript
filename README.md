@@ -1,5 +1,5 @@
 # CollageScript
-### **2012&#8212;2016**
+### **Circa 2012&#8212;2016**
 
 CollageScript is a library of Javascript code I developed to automate the creation of large, multi-layered *Photoshop* files using *~~Adobe's ExtendScript Toolkit~~* *Visual Studio Code*. It was used to create a number of large-format digital print editions and series. See https://www.calhounsmith.com/portfolio/code-based/
 
